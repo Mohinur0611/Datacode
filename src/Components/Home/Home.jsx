@@ -14,7 +14,11 @@ import icon13 from '../../assets/Icon/icon14.png'
 import icon14 from '../../assets/Icon/icon15.png'
 import icon15 from '../../assets/Icon/icon16.png'
 import icon16 from '../../assets/Icon/icon17.png'
+import icon17 from '../../assets/Icon/icon.png'
 import { box } from '../../Api'
+import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUser, faLock, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 const Home = () => {
   const rasmlar = {
     1: icon9,
@@ -40,11 +44,11 @@ const Home = () => {
               We create stunning, high-performance web applications that drive results. Transform your business with our expert development services and cutting-edge technology.
             </p>
             <div className='flex gap-6 justify-center mt-10'>
-              <button className="group btn btn-soft w-[250px] h-[60px] text-[17px] text-white border-red-500 bg-red-500 rounded-[10px] flex items-center justify-center gap-2">
+              <button className="group btn btn-soft w-[250px] h-[60px] text-[17px] text-white border-red-500 my-5 bg-red-500 rounded-[10px] flex items-center justify-center gap-2">
                 Start Your Projects
                 <img src={icon8} alt="" className="w-10 mt-1 transition-transform duration-300 group-hover:translate-x-2" />
               </button>
-              <button className='btn btn-ghost border-red-400 w-[200px] text-[17px] text-red-500 h-[60px] hover:text-white hover:bg-red-500 rounded-[10px]'>
+              <button className='btn btn-ghost border-red-400 w-[200px] text-[17px] text-red-500 h-[90px] hover:text-white hover:bg-red-500 rounded-[10px]'>
                 View our Work
               </button>
             </div>
@@ -71,7 +75,7 @@ const Home = () => {
           <h1 className='text-5xl text-center text-white font-bold'>
             Innovation Meets <span className='text-red-500'>Excellence</span>
           </h1>
-          <p className='text-[20px] text-center text-white mt-6'>
+          <p className='text-[20px] text-center text-gray-400 mt-6'>
             We combine technical expertise with creative vision to deliver exceptional results that drive your business forward.
           </p>
         </div>
@@ -128,8 +132,135 @@ const Home = () => {
 
 
       </div>
+      {/* --- BO'LIM 4 --- */}
+      <div className='w-full h-auto py-20 bg-gray-800 border-t-[1px] border-black'>
+        <div className='w-[200px] m-auto h-[30px] border-[0.5px] border-red-400 my-14 rounded-2xl bg-red-900/20'>
+          <h1 className='text-center text-red-300 my-0.5 text-[14px]'>Client Success Stories</h1>
+        </div>
+        <div className='w-[800px] m-auto mb-[100px]'>
+          <h1 className='text-5xl text-center text-white font-bold'>
+            What Our Clients Say
+          </h1>
+          <p className='text-[20px] text-center text-gray-400 mt-6'>
+            Don't just take our word for it. Here's what our satisfied clients have to say about working with us.  </p>
+        </div>
+        <div className='w-[1100px]  flex justify-center gap-10 m-auto group'>
+          <div className='w-[350px] h-[300px] border-[0.5px] border-gray-700 rounded-xl bg-gray-600/30 duration-500  hover:border-red-800 hover:bg-gradient-to-br from-red-800/20  '>
+            <div className='w-30 mx-5  my-5 flex gap-0.5' >
+              <img className='w-5 ' src={icon14} alt="" />
+              <img className='w-5 ' src={icon14} alt="" />
+              <img className='w-5' src={icon14} alt="" />
+              <img className='w-5' src={icon14} alt="" />
+              <img className='w-5' src={icon14} alt="" /></div>
+            <h1 className='mx-5 my-8 text-[20px] italic text-gray-300'>
+              "Datacode transformed our digital presence. Their attention to detail and technical expertise exceeded our expectations."</h1>
+            <div className='w-70 mx-5 flex gap-5'>
+              <div className='w-14 h-12 border-2 bg-gradient-to-bl from-red-600 to-red-500  border-red-500 rounded-[50%]'>
+                <h1 className='mx-4 font-bold text-amber-50 my-1'>SJ</h1>
+              </div>
+              <h1 className='text-white font-bold'>Sarah Johnson <br /><span className='text-red-400 font-normal'>TechCorp Inc.</span></h1>
 
+            </div>
+          </div>
+          <div className='w-[350px] h-[300px] border-[0.5px] border-gray-700 rounded-xl bg-gray-600/30 duration-500 hover:border-red-800 hover:bg-gradient-to-br from-red-800/20   '>
+            <div className='w-30 mx-5  my-5 flex gap-0.5' >
+              <img className='w-5 ' src={icon14} alt="" />
+              <img className='w-5 ' src={icon14} alt="" />
+              <img className='w-5' src={icon14} alt="" />
+              <img className='w-5' src={icon14} alt="" />
+              <img className='w-5' src={icon14} alt="" /></div>
+            <h1 className='mx-5 my-8 text-[20px] italic text-gray-300'>
+              "Professional, reliable, and innovative. They delivered our project on time and within budget."</h1>
+            <div className='w-50 mx-5 flex gap-5'>
+              <div className='w-14 h-12 border-2 bg-gradient-to-bl from-red-600 to-red-500 border-red-500 rounded-[50%]'>
+                <h1 className='mx-3 font-bold text-amber-50 my-1'>MC</h1>
+              </div>
+              <h1 className='text-white font-bold'>Michael Chen <br /><span className='text-red-400 font-normal'>StartupXYZ</span></h1>
 
+            </div>
+          </div>
+          <div className='w-[350px] h-[300px] border-[0.5px] border-gray-700 rounded-xl bg-gray-600/30 duration-500 hover:border-red-800 hover:bg-gradient-to-br from-red-800/20   '>
+            <div className='w-30 mx-5 my-5  flex gap-0.5 '>
+              <img className='w-5 ' src={icon14} alt="" />
+              <img className='w-5 ' src={icon14} alt="" />
+              <img className='w-5' src={icon14} alt="" />
+              <img className='w-5' src={icon14} alt="" />
+              <img className='w-5' src={icon14} alt="" /></div>
+            <h1 className='mx-5 my-8 text-[20px] italic text-gray-300'>
+
+              "Outstanding development team. Their modern approach and clean code made all the difference."</h1>
+            <div className='w-70 mx-5 flex gap-5'>
+              <div className='w-14 h-12 border-2 bg-gradient-to-bl from-red-600 to-red-500 border-red-500 rounded-[50%]'>
+                <h1 className='mx-4 font-bold text-amber-50 my-1'>ER</h1>
+              </div>
+              <h1 className='text-white font-bold'>
+                Emily Rodriguez <br /><span className='text-red-400 font-normal'>Digital Solutions</span></h1>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      {/* --- BO'LIM 5 --- */}
+      <div className='h-[700px] border-b-[1px] border-gray-700 bg-gradient-to-br from-blue-950/50 to-black pt-20'>
+        <div className='w-[1000px] m-auto bg-red-500 rounded-4xl' > <br />
+          <div className='w-[300px] m-auto  h-[38px] border-[0.5px] border-red-400 my-3 rounded-2xl bg-red-300/20'>
+            <h1 className='text-center  font-bold text-white my-1 text-[14px]'>Ready to Transform Your Business?</h1>
+          </div>
+          <div className='w-[600px] m-auto'>
+            <h1 className='text-[30px] text-white font-bold text-center'>Let's Build Something Amazing Together
+            </h1>
+            <p className='text-[20px] text-center text-white mt-6'>
+              Join hundreds of satisfied clients who have transformed their digital presence with our innovative solutions. Your next breakthrough is just one conversation away. </p>
+            <div className='flex gap-6 justify-center my-10 p-10 '>
+              <button className="group btn btn-soft w-[250px] h-[90px] text-[17px] text-white border-white bg-white rounded-[10px] flex items-center justify-center gap-2">
+              </button>
+              <button className='btn btn-ghost border-red-400 w-[200px] text-[17px] text-white h-[90px] hover:text-white hover:bg-white rounded-[10px]'>
+                View portfolio
+              </button>
+            </div>
+          </div>
+        </div>  </div>
+      {/* --- BO'LIM 6 --- */}
+      <div className='w-ful m-auto h-auto py-10 bg-gray-800  '>
+        <div className='w-[1000px] h-[300px]  flex justify-evenly m-auto' >
+          <div className='w-100 h-60  flex flex-wrap'>
+            <img className="w-[45px] h-[35px] rounded-xl bg-red-500 mt-5 " src={icon17} alt="logo" />
+            <h1 className="text-amber-50 text-xl my-5 mx-2 font-bold cursor-pointer group-hover:text-red-400">Datacode</h1>
+            <h1 className='text-gray-400 mb-18'>We specialize in creating modern, scalable web applications that drive business growth. Transform your digital presence with our expert development services.</h1>
+          </div>
+<div className='w-[150px] h-[200px] text-gray-500  '>
+<h1 className="text-amber-50 text-xl my-5 font-bold cursor-pointer 0">Quick Links</h1>
+  <h1 className='text-gray-400 hover:text-red-400 duration-100 cursor-pointer'> <Link to='/'> Home </Link> </h1>
+  <h1 className='text-gray-400 hover:text-red-400 duration-100 cursor-pointer'><Link to='/About'> About </Link></h1>
+  <h1 className='text-gray-400 hover:text-red-400 duration-100 cursor-pointer'><Link to='/Services'> Services </Link></h1>
+  <h1 className='text-gray-400 hover:text-red-400 duration-100 cursor-pointer'><Link to='/Contact'> Contact </Link></h1>
+</div>
+<div className='w-[150px] h-[200px] text-gray-500 '>
+<h1 className="text-amber-50 text-xl my-5  font-bold cursor-pointer group-hover:text-red-400">Contact</h1>
+  <span className='text-gray-400 flex '>
+
+  <svg className='w-7' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z"/></svg>
+    hello@datacode.com</span>
+  <h1 className='text-gray-400 '>+1 (555) 123-4567</h1>
+  <h1 className='text-gray-400 '>San Francisco, CA</h1>
+  </div>
+      </div>
+       
+        <hr className='text-gray-500 w-[1150px] '/>
+       <div className=' flex justify-between my-5 group'>
+        <h1 className='text-gray-400 hover:'>© 2024 Datacode. All rights reserved.</h1>
+        <div className='flex justify-around space-x-5 '>
+  <h1 className='text-gray-400 hover:text-red-400 duration-100 cursor-pointer'><Link to='/Home'>
+    Privacy Policy </Link>
+  </h1>
+  <h1 className='text-gray-400 hover:text-red-400 duration-100 cursor-pointe mx-[45px]'><Link to='/Home'>
+  Terms of Service </Link>
+    
+  </h1>
+</div>
+
+</div>
+        </div>
     </div>
   )
 }
