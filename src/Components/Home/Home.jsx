@@ -17,8 +17,6 @@ import icon16 from '../../assets/Icon/icon17.png'
 import icon17 from '../../assets/Icon/icon.png'
 import { box } from '../../Api'
 import { Link } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser, faLock, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 const Home = () => {
   const rasmlar = {
     1: icon9,
