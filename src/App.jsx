@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Link, useLocation } from 'react-router-do
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import icon from './assets/Icon/icon.png';
-import icon1 from './assets/Icon/icon1.png';
+import icon1 from './assets/Icon/Icon1.png';
 
 const Navbar = () => {
   const location = useLocation();
