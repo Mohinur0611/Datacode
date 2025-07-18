@@ -14,6 +14,7 @@ const photo={
 
 
   return (
+<<<<<<< Updated upstream
     <div className="w-[1200px] m-auto bg-black">
        {/* --- BO'LIM 1 --- */}
       <div className='h-[800px] border-b-[1px] border-gray-700 bg-gradient-to-br from-blue-950 to-black pt-20'>
@@ -212,6 +213,11 @@ const photo={
 
     </div>
 
+=======
+    <div>
+
+      <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio sit ea ex inventore fugit fuga sint corrupti voluptatum nostrum cum?</h1>
+>>>>>>> Stashed changes
     </div>
   )
 }
