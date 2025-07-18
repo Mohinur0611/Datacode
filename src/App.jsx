@@ -65,7 +65,7 @@ const Navbar = () => {
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="w-[1200px] m-auto h-[5000px] border-[0.2px] border-black">
+      <div className="w-[1200px] m-auto h-[4000px] border-[0.2px] border-black">
         <Navbar />
 
         <Routes>

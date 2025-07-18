@@ -252,11 +252,9 @@ const Home = () => {
     Privacy Policy </Link>
   </h1>
   <h1 className='text-gray-400 hover:text-red-400 duration-100 cursor-pointe mx-[45px]'><Link to='/Home'>
-  Terms of Service </Link>
-    
+  Terms of Service </Link>  
   </h1>
 </div>
-
 </div>
         </div>
     </div>
