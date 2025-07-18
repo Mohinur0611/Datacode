@@ -255,6 +255,7 @@ const Home = () => {
   Terms of Service </Link>
     
   </h1>
+  <h1>Mohinur</h1>
 </div>
 
 </div>
