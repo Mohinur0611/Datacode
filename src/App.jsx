@@ -4,6 +4,8 @@ import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import icon from './assets/Icon/icon.png';
 import icon1 from './assets/Icon/Icon1.png';
+import Services from './Components/Services/Services';
+import Contact from './Components/Contact/Contact';
 
 const Navbar = () => {
   const location = useLocation();
@@ -11,7 +13,7 @@ const Navbar = () => {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Services", path: "/home1" },
+    { name: "Services", path: "/services" },
     { name: "Contact", path: "/contact" }
   ];
 
@@ -34,22 +36,22 @@ const Navbar = () => {
 
           return (
             <li key={item.name}>
-<Link
-  to={item.path}
-  className={`relative inline-block text-[15px] px-2 transition-colors duration-300 
+              <Link
+                to={item.path}
+                className={`relative inline-block text-[15px] px-2 transition-colors duration-300 
               ${isActive ? 'text-red-400' : 'text-white hover:text-red-400'}`}
->
-  <span
-    className={`relative z-10
+              >
+                <span
+                  className={`relative z-10
                 before:content-[''] before:absolute before:bottom-[-4px] before:left-0 
                 before:h-[2px] before:w-full before:bg-red-400 
                 before:origin-center before:scale-x-0 hover:before:scale-x-100
                 before:transition-transform before:duration-300
                 ${isActive ? 'before:scale-x-100' : ''}`}
-  >
-    {item.name}
-  </span>
-</Link>
+                >
+                  {item.name}
+                </span>
+              </Link>
 
             </li>
           );
@@ -65,14 +67,16 @@ const Navbar = () => {
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="w-[1200px] m-auto h-[4000px] border-[0.2px] border-black">
+      <div className="w-[1200px] m-auto h-[3000px] border-[0.2px] border-black">
         <Navbar />
 
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/home1" element={<div className="p-10 text-xl">Services Page</div>} />
-          <Route path="/contact" element={<div className="p-10 text-xl">Contact Page</div>} />
+          <Route path="/services" element={<Services/>} />
+          <Route path="/contact" element={<Contact/>} />
+         
+          
           <Route path="*" element={<h1 className="text-center mt-20 text-3xl text-red-500">404 Not Found</h1>} />
         </Routes>
       </div>
