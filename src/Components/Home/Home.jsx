@@ -5,7 +5,6 @@ import icon4 from '../../assets/Icon/icon4.png'
 import icon5 from '../../assets/Icon/icon5.png'
 import icon6 from '../../assets/Icon/icon6.png'
 import icon7 from '../../assets/Icon/icon7.png'
-import icon8 from '../../assets/Icon/icon8.png'
 import icon9 from '../../assets/Icon/icon10.png'
 import icon10 from '../../assets/Icon/icon11.png'
 import icon11 from '../../assets/Icon/icon12.png'
@@ -48,9 +47,8 @@ const Home = () => {
             <div className='flex gap-6 justify-center mt-10'>
               <button className="group btn btn-soft w-[250px] h-[60px] text-[17px] text-white border-red-500 my-5 bg-red-500 rounded-[10px] flex items-center justify-center gap-2">
                 Start Your Projects
-                <img src={icon8} alt="" className="w-10 mt-1 transition-transform duration-300 group-hover:translate-x-2" />
-              </button>
-              <button className='btn btn-ghost border-red-400 w-[200px] text-[17px] text-red-500 h-[90px] hover:text-white hover:bg-red-500 rounded-[10px]'>
+                  </button>
+              <button className='btn btn-ghost border-red-400 w-[250px] text-[17px] text-red-500 my-5 h-[60px] hover:text-white hover:bg-red-500 rounded-[10px]'>
                 View our Work
               </button>
             </div>

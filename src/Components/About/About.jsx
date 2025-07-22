@@ -33,7 +33,7 @@ const photo={
           </div>
           <div className='w-[800px] m-auto mb-[200px]'>
             <h1 className='text-6xl text-white font-bold text-center '>
-              Crafting Digital<span className='text-red-500'>Excellence</span>
+              Crafting Digital<span className='text-red-500'> Excellence</span>
             </h1>
             <p className='text-[22px] text-center text-white mt-6'>
               We're a passionate team of innovators, developers, and designers dedicated to creating exceptional web experiences that drive business growth and inspire user engagement.     </p>
